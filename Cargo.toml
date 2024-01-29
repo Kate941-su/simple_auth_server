@@ -11,8 +11,8 @@ actix-cors = "0.7.0"
 totp-rs = "5.5.1"
 base32 = "0.4.0"
 rand = "0.8.5"
-serde = "1.0.196"
+serde = { version = "1.0.196", features = ["derive"] }
 serde_json = "1.0.112"
-chrono = "0.4.33"
+chrono = { version = "0.4.33", features = ["serde"] }
 env_logger = "0.11.1"
-uuid = "1.7.0"
+uuid = {"version" = "1.7.0", features = ["v4"]}
